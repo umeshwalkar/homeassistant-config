@@ -304,13 +304,13 @@ var CONFIG = {
                      },
                      fields: {
                         temperature: '&weather.home.attributes.temperature',
-                        temperatureUnit: '&weather.home_temperature.attributes.unit_of_measurement',
+                        temperatureUnit: '&weather.home.attributes.temperature.attributes.unit_of_measurement',
                         // windSpeed: '&weather.home.attributes.wind_speed',
                         // windSpeedUnit: '&weather.home.attributes.wind_speed.unit_of_measurement',
                         humidity: '&weather.home.attributes.humidity',
-                        humidityUnit: '&weather.home.attributes.humidity.unit_of_measurement',
+                        humidityUnit: '%',
                         pressure: '&weather.home.attributes.pressure',
-                        pressureUnit: '&weather.home.attributes.pressure.unit_of_measurement',
+                        pressureUnit: 'hPa',
                         list: [
                           //  'Feels like 16 °C',
                            /*'Rain: '
