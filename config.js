@@ -263,8 +263,10 @@ var CONFIG = {
                      //classes: ['-compact'],
                      type: TYPES.WEATHER,
                      id: "weather.home",
-                     state: function () {return 'Clear, night'}, // https://github.com/resoai/TileBoard/wiki/Anonymous-functions
-                     icon: 'clear-night',
+                     // state: function () {return 'Clear, night'}, // https://github.com/resoai/TileBoard/wiki/Anonymous-functions
+                     state: '&weather.openweathermap.state',
+                     // icon: 'clear-night',
+                     icon: '&weather.openweathermap.state',
                      icons: {
                         'clear-day': 'clear',
                         'clear-night': 'nt-clear',
