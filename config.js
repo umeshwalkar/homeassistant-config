@@ -303,21 +303,26 @@ var CONFIG = {
                         'windy-variant': 'Windy'
                      },
                      fields: {
-                        temperature: '18',
-                        temperatureUnit: '°C',
-                        windSpeed: '5',
+                        temperature: '&sensor.home_temperature.state',
+                        temperatureUnit: '&sensor.home_temperature.attributes.unit_of_measurement',
+                        windSpeed: '&sensor.home_wind_speed.state',
                         windSpeedUnit: 'kmh',
-                        humidity: '50',
+                        humidity: '&sensor.home_humidity.state',
                         humidityUnit: '%',
-                        pressure: '650',
+                        pressure: '&sensor.home_pressure.state',
                         pressureUnit: 'hPa',
                         list: [
-                           'Feels like 16 °C',
-                           /*
+                           // 'Feels like 16 °C',
+                           'Rain: '
+                              + '&sensor.home_rain.state '
+                              + '&sensor.home_rain.attributes.unit_of_measurement',
+                           'Snow: '
+                              + '&sensor.home_snow.state '
+                              + '&sensor.home_snow.attributes.unit_of_measurement',
                            'Cloud coverage '
-                              + '&sensor.openweathermap_cloud_coverage.state'
-                              + '&sensor.openweathermap_cloud_coverage.attributes.unit_of_measurement',
-                           */
+                              + '&sensor.home_cloud_coverage.state'
+                              + '&sensor.home_cloud_coverage.attributes.unit_of_measurement',
+                           
                         ]
                      }
                   }
