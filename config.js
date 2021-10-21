@@ -250,7 +250,7 @@ var CONFIG = {
             },
 
             {
-               title: 'MyCity',
+               title: 'MyHomeCity',
                width: 1,
                height: 3,
                // row: 1,  // optional; index of the row used for the GRID layout. If not specified, the default is 0
@@ -264,9 +264,9 @@ var CONFIG = {
                      type: TYPES.WEATHER,
                      id: "weather.home",
                      // state: function () {return 'Clear, night'}, // https://github.com/resoai/TileBoard/wiki/Anonymous-functions
-                     state: '&weather.openweathermap.state',
+                     state: '&weather.home.state',
                      // icon: 'clear-night',
-                     icon: '&weather.openweathermap.state',
+                     icon: '&weather.home.state',
                      icons: {
                         'clear-day': 'clear',
                         'clear-night': 'nt-clear',
