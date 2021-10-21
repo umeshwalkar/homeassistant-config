@@ -262,7 +262,7 @@ var CONFIG = {
                      height: 2, // 1 for compact
                      //classes: ['-compact'],
                      type: TYPES.WEATHER,
-                     id: {},
+                     id: "weather.home",
                      state: function () {return 'Clear, night'}, // https://github.com/resoai/TileBoard/wiki/Anonymous-functions
                      icon: 'clear-night',
                      icons: {
