@@ -304,7 +304,7 @@ var CONFIG = {
                      },
                      fields: {
                         temperature: '&weather.home.attributes.temperature',
-                        temperatureUnit: '&weather.home.attributes.temperature.unit_of_measurement',
+                        temperatureUnit: '&weather.home_temperature.attributes.unit_of_measurement',
                         // windSpeed: '&weather.home.attributes.wind_speed',
                         // windSpeedUnit: '&weather.home.attributes.wind_speed.unit_of_measurement',
                         humidity: '&weather.home.attributes.humidity',
