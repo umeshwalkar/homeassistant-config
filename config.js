@@ -303,8 +303,8 @@ var CONFIG = {
                         'windy-variant': 'Windy'
                      },
                      fields: {
-                        temperature: '&weather.home_temperature.state',
-                        temperatureUnit: '&weather.home_temperature.attributes.unit_of_measurement',
+                        temperature: '&weather.home.attributes.temperature',
+                        temperatureUnit: '&weather.home.attributes.temperature.unit_of_measurement',
                         windSpeed: '&weather.home_wind_speed.state',
                         windSpeedUnit: 'kmh',
                         humidity: '&weather.home_humidity.state',
@@ -312,8 +312,8 @@ var CONFIG = {
                         pressure: '&weather.home_pressure.state',
                         pressureUnit: 'hPa',
                         list: [
-                           // 'Feels like 16 °C',
-                           'Rain: '
+                            'Feels like 16 °C',
+                           /*'Rain: '
                               + '&weather.home_rain.state '
                               + '&weather.home_rain.attributes.unit_of_measurement',
                            'Snow: '
@@ -322,7 +322,7 @@ var CONFIG = {
                            'Cloud coverage '
                               + '&weather.home_cloud_coverage.state'
                               + '&weather.home_cloud_coverage.attributes.unit_of_measurement',
-                           
+                           */
                         ]
                      }
                   }
