@@ -303,25 +303,25 @@ var CONFIG = {
                         'windy-variant': 'Windy'
                      },
                      fields: {
-                        temperature: '&sensor.home_temperature.state',
-                        temperatureUnit: '&sensor.home_temperature.attributes.unit_of_measurement',
-                        windSpeed: '&sensor.home_wind_speed.state',
+                        temperature: '&weather.home_temperature.state',
+                        temperatureUnit: '&weather.home_temperature.attributes.unit_of_measurement',
+                        windSpeed: '&weather.home_wind_speed.state',
                         windSpeedUnit: 'kmh',
-                        humidity: '&sensor.home_humidity.state',
+                        humidity: '&weather.home_humidity.state',
                         humidityUnit: '%',
-                        pressure: '&sensor.home_pressure.state',
+                        pressure: '&weather.home_pressure.state',
                         pressureUnit: 'hPa',
                         list: [
                            // 'Feels like 16 °C',
                            'Rain: '
-                              + '&sensor.home_rain.state '
-                              + '&sensor.home_rain.attributes.unit_of_measurement',
+                              + '&weather.home_rain.state '
+                              + '&weather.home_rain.attributes.unit_of_measurement',
                            'Snow: '
-                              + '&sensor.home_snow.state '
-                              + '&sensor.home_snow.attributes.unit_of_measurement',
+                              + '&weather.home_snow.state '
+                              + '&weather.home_snow.attributes.unit_of_measurement',
                            'Cloud coverage '
-                              + '&sensor.home_cloud_coverage.state'
-                              + '&sensor.home_cloud_coverage.attributes.unit_of_measurement',
+                              + '&weather.home_cloud_coverage.state'
+                              + '&weather.home_cloud_coverage.attributes.unit_of_measurement',
                            
                         ]
                      }
