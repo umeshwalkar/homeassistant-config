@@ -185,7 +185,7 @@ var CONFIG = {
             },
 
             {
-               title: 'Second group',
+               title: 'Bedroom',
                width: 2,
                height: 3,
                // row: 0,  // optional; index of the row used for the GRID layout. If not specified, the default is 0
@@ -223,30 +223,27 @@ var CONFIG = {
                   },
                   {
                      position: [0, 1],
-                     type: TYPES.ALARM,
-                     // id: "alarm_control_panel.home_alarm",
-                     id: { state: 'disarmed' }, // replace it with real string id
-                     title: 'Home Alarm',
-                     icons: {
-                        arming: 'mdi-bell-outline',
-                        disarmed: 'mdi-bell-off',
-                        pending: 'mdi-bell',
-                        armed_custom_bypass: 'mdi-bell-check',
-                        armed_home: 'mdi-bell-plus',
-                        armed_night: 'mdi-bell-sleep',
-                        armed_away: 'mdi-bell',
-                        triggered: 'mdi-bell-ring',
-                     },
-                     states: {
-                        arming: 'Arming',
-                        disarmed: 'Disarmed',
-                        pending: 'Pending',
-                        armed_custom_bypass: 'Armed custom bypass',
-                        armed_home: 'Armed home',
-                        armed_night: 'Armed night',
-                        armed_away: 'Armed away',
-                        triggered: 'Triggered',
-                     },
+                     type: TYPES.SENSOR,
+                     title: 'Temperature',
+                     id: 'sensor.ewelink_th01_4a386a22_temperature',
+                     unit: 'C', // override default entity unit
+                     state: false, // hidding state
+                     filter: function (value) { // optional
+                        var num = parseFloat(value);
+                        return num && !isNaN(num) ? num.toFixed(1) : value;
+                     }
+                  },
+                  {
+                     position: [1, 1],
+                     type: TYPES.SENSOR,
+                     title: 'Humidity',
+                     id: 'sensor.ewelink_th01_4a386a22_humidity',
+                     unit: '%', // override default entity unit
+                     state: false, // hidding state
+                     filter: function (value) { // optional
+                        var num = parseFloat(value);
+                        return num && !isNaN(num) ? num.toFixed(1) : value;
+                     }
                   },
 
                ],
