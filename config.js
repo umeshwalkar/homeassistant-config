@@ -215,8 +215,8 @@ var CONFIG = {
                      position: [1, 0],
                      width: 1,
                      type: TYPES.SWITCH,
-                     //id: "switch.ewelink_sa_003_zigbee_b5aed61c_on_off",
-                     id: {state: 'off'}, // replace it with real string id (e.g. "switch.lights")
+                     id: "switch.ewelink_sa_003_zigbee_b5aed61c_on_off",
+                     // id: {state: 'off'}, // replace it with real string id (e.g. "switch.lights")
                      state: false,
                      title: 'eWeLink SA-003 switch',
                      icons: {'off': 'mdi-volume-off', 'on': 'mdi-volume-high'}
