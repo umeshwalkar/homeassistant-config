@@ -305,8 +305,8 @@ var CONFIG = {
                      fields: {
                         temperature: '&weather.home.attributes.temperature',
                         temperatureUnit: '°C',
-                        // windSpeed: '&weather.home.attributes.wind_speed',
-                        // windSpeedUnit: '&weather.home.attributes.wind_speed.unit_of_measurement',
+                        windSpeed: '&weather.home.attributes.wind_speed',
+                        windSpeedUnit: 'kmh',
                         humidity: '&weather.home.attributes.humidity',
                         humidityUnit: '%',
                         pressure: '&weather.home.attributes.pressure',
@@ -314,13 +314,13 @@ var CONFIG = {
                         list: [
                           //  'Feels like 16 °C',
                            /*'Rain: '
-                              + '&weather.home_rain.state '
+                              + '&weather.home.attributes.rain'
                               + '&weather.home_rain.attributes.unit_of_measurement',
                            'Snow: '
-                              + '&weather.home_snow.state '
+                              + '&weather.home.attributes.snow'
                               + '&weather.home_snow.attributes.unit_of_measurement',
                            'Cloud coverage '
-                              + '&weather.home_cloud_coverage.state'
+                              + '&weather.home.attributes.cloud_coverage'
                               + '&weather.home_cloud_coverage.attributes.unit_of_measurement',
                            */
                         ]
